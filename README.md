@@ -34,15 +34,21 @@ WEB_URL="https://my-bot.vercel.app"
 
 We will use `localhost:3000` in default
 
-## Prisma
+## Create Prisma Migrate baseline
 
-You should create a migration baseline before deploying your app
+You need to create a migration baseline before deploying your app
 
-### Reset development database
+1. **Reset Development database**
 
-```
-pnpm prisma migrate dev
-```
+   ```
+   prisma migrate dev
+   ```
+
+2. **Production database**
+
+   ```
+   prisma migrate resolve --applied 20230305142521_initial
+   ```
 
 [Learn More](https://pris.ly/d/migrate-baseline)
 
