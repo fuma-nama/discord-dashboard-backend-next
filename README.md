@@ -1,5 +1,4 @@
-> **Frontend Repo** <br/>
-> https://github.com/SonMooSans/discord-bot-dashboard-next
+> **Frontend Repo** <br/> > https://github.com/SonMooSans/discord-bot-dashboard-next
 
 # Discord Bot Dashboard Backend Demo
 
@@ -34,6 +33,18 @@ WEB_URL="https://my-bot.vercel.app"
 ```
 
 We will use `localhost:3000` in default
+
+## Prisma
+
+You should create a migration baseline before deploying your app
+
+### Reset development database
+
+```
+pnpm prisma migrate dev
+```
+
+[Learn More](https://pris.ly/d/migrate-baseline)
 
 # Deploy
 
