@@ -52,13 +52,13 @@ You need to create a migration baseline before deploying your app
 
 [Learn More](https://pris.ly/d/migrate-baseline)
 
-# Deploy
+## Deploy
 
 We recommend using https://railway.app to deploy your backend
 
 You are able to host both your database and node.js server on Railway
 
-## PORT
+### PORT
 
 The service will be running in port `8080`
 
@@ -68,3 +68,57 @@ If you planned to deploy the app on railway, please add an enironment variable:
 | PORT | 8080 |
 
 So that the service can be detected by railway (see [here](https://docs.railway.app/deploy/railway-up) for further information)
+
+<br/>
+
+## File Structure
+
+| Path                    | Description        |
+| ----------------------- | ------------------ |
+| `./src/bot`             | The Discord bot    |
+| `./src/api`             | The API service    |
+| `./src/api/controllers` | API controllers    |
+| `./src/api/services`    | 3rd party services |
+
+### Add a Feature
+
+Create new routes in the guild controller
+
+[Learn More](https://github.com/SonMooSans/discord-bot-dashboard-next#required-routes)
+
+```ts
+@Get('/features/welcome-message')
+async getWelcomeMessage(@Param('guild') guild: string) {
+   //Database calls
+
+  return {
+    message: 'message',
+    channel: '1111',
+  };
+}
+
+@Post('/features/welcome-message')
+async enableWelcomeMessage(@Req() req: AuthRequest, @Param('guild') guild: string) {
+   //Enables the feature
+
+   return 'Success';
+}
+
+@Patch('/features/welcome-message')
+async updateWelcomeMessage(
+  @Req() req: AuthRequest,
+  @Param('guild') guild: string,
+  @Body() body: Partial<WelcomeMessage>,
+) {
+   //Update the feature
+
+   return updated;
+}
+
+@Delete('/features/welcome-message')
+async disableWelcomeMessage(@Param('guild') guild: string, @Req() req: AuthRequest) {
+   //Disables the feature
+
+   return 'Success';
+}
+```
