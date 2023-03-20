@@ -1,5 +1,4 @@
-> **Frontend Repo** <br/>
-> https://github.com/SonMooSans/discord-bot-dashboard-next
+> **Frontend Repo** <br/> > https://github.com/SonMooSans/discord-bot-dashboard-next
 
 # Discord Bot Dashboard Backend Demo
 
@@ -8,8 +7,17 @@
 - Database (Prisma)
 - Nest.js with Typescript
 - Discord.js
+- PnpM (Package Manager)
 
-## Configuration
+## Install Dependencies
+
+Make sure you're using [pnpm](https://pnpm.io), in order to load the lock file
+
+```
+pnpm install
+```
+
+## Environment variables
 
 You need some **Environment variables** in order to run it
 
