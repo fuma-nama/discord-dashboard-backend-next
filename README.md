@@ -1,4 +1,6 @@
-> **Frontend Repo** <br/> > https://github.com/SonMooSans/discord-bot-dashboard-next
+> **Frontend Repo**
+>
+> https://github.com/SonMooSans/discord-bot-dashboard-next
 
 # Discord Bot Dashboard Backend Demo
 
