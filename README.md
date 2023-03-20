@@ -1,6 +1,4 @@
-> **Frontend Repo**
->
-> https://github.com/SonMooSans/discord-bot-dashboard-next
+[Go to Frontend](https://github.com/SonMooSans/discord-bot-dashboard-next)
 
 # Discord Bot Dashboard Backend Demo
 
@@ -9,7 +7,7 @@
 - Database (Prisma)
 - Nest.js with Typescript
 - Discord.js
-- PnpM (Package Manager)
+- PnPM (Package Manager)
 
 ## Install Dependencies
 
