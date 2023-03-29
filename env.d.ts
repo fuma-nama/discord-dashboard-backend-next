@@ -10,6 +10,8 @@ declare global {
        * ex: `https://my-bot.vercel.app`, default: `http://localhost:3000`
        */
       WEB_URL?: string;
+
+      PORT?: string;
     }
   }
 }
