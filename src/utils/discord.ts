@@ -1,5 +1,5 @@
 import { API_ENDPOINT } from '@/config';
-import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus } from '@nestjs/common';
 
 export type UserSession = {
   access_token: string;
